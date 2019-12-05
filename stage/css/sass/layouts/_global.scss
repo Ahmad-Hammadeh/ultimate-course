@@ -6,9 +6,13 @@
     min-height: 100vh;
     .content-area {
         width: calc(100% - 250px);
-        min-height: 100%;
+        min-height: 100vh;
+        float: right;
+        background-color: #fff;
         transition: all .3s ease-in-out;
         will-change: width;
-        float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }

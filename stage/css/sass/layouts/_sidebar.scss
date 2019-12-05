@@ -5,6 +5,9 @@
     width: 250px;
     height: 100%;
     padding: 15px;
-    background-color: #eee;
+    background-color: #303944;
     transition: all .3s ease-in-out;
+    &.no-sidebar {
+        left: -250px;
+    }
 }

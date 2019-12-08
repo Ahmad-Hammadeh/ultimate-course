@@ -10,5 +10,7 @@ html(lang="en")
       include pug/layouts/sidebar
       .content-area.clearfix
         include pug/layouts/header
-        h3 #{pageTitle}
+        .container-fluid
+          .content
+            include pug/components/page_head
     include pug/layouts/scripts

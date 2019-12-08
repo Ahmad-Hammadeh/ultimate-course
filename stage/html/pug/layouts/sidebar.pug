@@ -1,2 +1,22 @@
 .sidebar
-  h3 Sidebar
+  .logo.text-center Hammadeh
+  ul.links-list.list-unstyled
+    li: a(href="#") Homepage
+    li
+      a(class="toggle-list", href="#") 
+        | Form
+        i.fa.fa-angle-right.clearfix
+      ul.child-list.list-unstyled
+        li: a(href="#") Input
+        li: a(href="#") Textarea
+        li: a(href="#") Select
+        li: a(href="#") Checkbox
+        li: a(href="#") Radio
+    li
+      a(class="toggle-list", href="#")
+        | Messages
+        i.fa.fa-angle-right.clearfix
+      ul.child-list.list-unstyled
+        li: a(href="#") Success
+        li: a(href="#") Danger
+        li: a(href="#") Loading

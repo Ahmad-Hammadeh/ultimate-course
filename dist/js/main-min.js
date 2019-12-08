@@ -1,1 +1,1 @@
-$(function(){$(".sidebar-toggle").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")})});
+$(function(){$(".sidebar-toggle").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")}),$(".links-list .toggle-list").on("click",function(){$(this).next("ul").slideToggle().end().find(".fa-angle-right").toggleClass("opened")})});

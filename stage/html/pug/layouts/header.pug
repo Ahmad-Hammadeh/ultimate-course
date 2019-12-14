@@ -1,2 +1,58 @@
 .header
-  i.fa.fa-exchange.fa-lg.sidebar-toggle
+  i.fa.fa-exchange.fa-md.sidebar-toggle.header-icon
+  .dropdown.notification-contaner
+    i#dropdownMenu.fa.fa-bell.fa-md.header-icon(data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+    .dropdown-menu(aria-labelledby="dropdownMenu")
+      .notification-head
+        | Notification
+        span.notification-count.clearfix 93
+      .notification-content
+        ul.list-unstyled
+          li
+           i.fa.fa-envelope-o.message
+           | You have <span>5</span> message/messages
+          li
+           i.fa.fa-money.money
+           | You have $<span>5</span>
+          li
+           i.fa.fa-thumbs-up.like
+           | You have like From <span>Ali</span>
+          li
+           i.fa.fa-user.user
+           |  You have invite <span>Mohammad Ali</span>
+          li
+           i.fa.fa-calendar.calendar
+           | You have <span>5</span> objects today
+      .notification-footer.text-center 
+        a(href="#") Show all notification
+  i.fa.fa-expand.fa-md.fullscreen-toggle.header-icon
+  .dropdown.usermenu-container.clearfix
+    #dropdownUsermenu.usermenu-toggle(data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+      img.avatar.img-thumbnail.rounded-circle(src="images/avatar.jpg", alt="profile")
+      span.username Ahmad Ali
+      i.fa.fa-angle-right.fa-lg.usermenu-arrow
+    .dropdown-menu.dropdown-menu-right(aria-labelledby="dropdownUsermenu")
+      .user-info
+        h4 Ahmad Hammadeh
+        small Admin
+      ul.activities-list.list-unstyled
+        li Bla bla bla bla bla blab bla
+        li Bla bla bla bla bla
+        li Bla bla bla bla bla bla blab
+        li Bla bla bla blab
+      .usermenu-links
+        .row
+          .col.link-box
+            a(href="#") 
+              i.fa.fa-gear
+              |Setting
+          .col.link-box
+            a(href="#")
+              i.fa.fa-user
+              |Profile
+          .col.link-box
+            a(href="#")
+              i.fa.fa-sign-out
+              |Logout
+      
+

@@ -1,7 +1,195 @@
 .header {
-    padding: 15px;
-    background-color: #fff;
-    .sidebar-toggle {
+    padding: 15px 20px;
+    background-color: $white;
+    .header-icon{
+        border-radius: 50%;
+        padding: 6px 7px 8px;
+        background-color: $white;
+        color: $mainDarkColor;
+        transition: all .3s ease-in-out;
         cursor: pointer;
+        &:hover{
+            background-color: $mainDarkColor;
+            color: $white;
+        }
+    }
+    .notification-contaner{
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 15px;
+        .dropdown-menu{
+            min-width: 400px;
+            border: none;
+            box-shadow: 5px 5px 10px $mainLightColor;
+            top: 13px !important; // For Reset Bootstrap Dropdown Menu Position
+            padding: 0; // For Reset Bootstrap Dropdown Menu Padding 
+
+            &:before{
+                content: "";
+                border-width: 10px;
+                border-color: transparent;
+                border-style: solid;
+                border-bottom-color: $mainDarkColor;
+                position: absolute;
+                left: 5px;
+                top: -20px;
+            }
+            .notification-head{
+                padding: 10px;
+                background-color: $mainDarkColor;
+                color: $white;
+                .notification-count{
+                    float: right;
+                }
+            }
+            .notification-content{
+                padding: 20px;
+                ul{
+                    margin-bottom: 0;
+                    li{
+                        border-bottom: 1px solid $mainLightColor;
+                        padding: 10px;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            background-color: $mainLightColor;
+                            color: $white;
+                            i{
+                                background-color: $mainDarkColor !important;
+                            }
+                        }
+                        &:last-child{
+                            border-bottom: 0;
+                        }
+                        i{
+                            margin-right: 5px;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            color: $white;
+                            &.message{
+                                background-color: #2980b9;
+                            }
+                            &.money{
+                                background-color: #27ae60;
+                            }
+                            &.like{
+                                background-color: #2ecc71;
+                            }
+                            &.user{
+                                background-color: #8e44ad;
+                            }
+                            &.calendar{
+                                background-color: #16a085;
+                            }                            
+                        }
+                    }
+                }
+            }
+            .notification-footer{
+                border-top: 1px solid $mainLightColor;
+                padding: 10px 0;
+            }
+        }
+        
+    }
+    .usermenu-container{
+        float: right;
+        &:hover{
+            .usermenu-toggle{
+                color: $mainDarkColor;
+            }
+            .avatar{
+                transform: scale(1.1);
+            }
+        }
+        .usermenu-toggle{
+            color: $mainLightColor;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            .avatar{
+                width: 40px;
+                height: 40px;
+                transition: all .3s ease-in-out;
+            }
+            .username{
+                margin-left: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            .usermenu-arrow{
+                transition: all .3s ease-in-out;
+                &.opened{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .dropdown-menu{
+            min-width: 400px;
+            border: 1px solid $mainLightColor;
+            box-shadow: 5px 5px 10px $mainLightColor;
+            top: 3px !important; // For Reset Bootstrap Dropdown Menu Position
+            padding: 20px; // For Reset Bootstrap Dropdown Menu Padding 
+
+            &:before{
+                content: "";
+                border-width: 10px;
+                border-color: transparent;
+                border-style: solid;
+                border-bottom-color: $mainLightColor;
+                position: absolute;
+                right: 30px;
+                top: -20px;
+            }
+            .user-info{
+
+                h4{
+                    font-weight: bold;
+                    color: $mainDarkColor;
+                }
+                small{
+                    color: $mainLightColor;
+                    position: relative;
+                    top: -10px;
+                    left: 5px;
+                }
+                border-bottom: 1px solid $mainLightColor;
+            }
+            .activities-list{
+                border-bottom: 1px solid $mainLightColor;
+                li{
+                    padding: 10px 0 0 5px;
+                    &:last-child{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .usermenu-links{
+
+                .link-box{
+                    margin-left: 10px;
+                    border: 1px solid $whiteAlt;
+                    border-radius: 6px;
+                    padding: 10px;
+                    background-color: transparent;
+                    text-align: center;
+                    &:last-child{
+                        margin-right: 10px;
+                    }
+                    &:hover{
+                        background-color: $mainLightColor;
+                        a{
+                            color: $whiteAlt;
+                        }
+                    }
+                    a{
+                        color: $mainLightColor;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

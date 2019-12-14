@@ -5,8 +5,8 @@
     width: 250px;
     height: 100%;
     padding: 15px;
-    background-color: #303944;
-    color: #fff;
+    background-color: $mainDarkColor;
+    color: $white;
     transition: all .3s ease-in-out;
     &.no-sidebar {
         left: -250px;
@@ -27,7 +27,7 @@
                 color: #8a8fa5;
                 transition: all .3s ease-in-out;
                 &:hover{
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
@@ -36,7 +36,7 @@
             
             >a {
                 position: relative;
-                color: #fff;
+                color: $white;
                 &:hover{
                     padding-left: 25px;
                 }
@@ -48,10 +48,10 @@
                     transform: translateY(-50%);
                     width: 8px;
                     height: 8px;
-                    border: 1px solid #fff;
+                    border: 1px solid $white;
                     border-radius: 50%;
                 }
-                i{
+                .fa-angle-right{
                     float: right;
                     position: relative;
                     top: 5px;
@@ -86,7 +86,7 @@
                             top: 0;
                             width: 2px;
                             height: 100%;
-                            background-color: #fff;
+                            background-color: $white;
                         }
                     }
                 }

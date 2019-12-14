@@ -74,4 +74,10 @@ $(function () {
 
     });
 
+    // Toggle Settings Box On Click
+    $('.settings-box .settings-toggle').on('click', function(){
+        $(this).find('.fa-gear').toggleClass('fa-spin');
+        $(this).parent('.settings-box ').toggleClass('opened');
+    });
+
 });

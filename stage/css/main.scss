@@ -1,5 +1,8 @@
 @import 'sass/variables/colors';
+@import 'sass/helpers/clearfix';
+
 @import 'sass/layouts/global';
 @import 'sass/layouts/sidebar';
 @import 'sass/layouts/header';
-@import 'sass/helpers/clearfix';
+
+@import 'sass/components/settings_box';

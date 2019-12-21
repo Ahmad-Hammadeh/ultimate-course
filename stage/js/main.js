@@ -80,4 +80,27 @@ $(function () {
         $(this).parent('.settings-box ').toggleClass('opened');
     });
 
+    /* Start Change Color Of Website Theme By Click The Color Option */
+
+    // Get All Themes Classes
+    var all_themes = [];
+    
+    $('.settings-box .color-options ul li').each(function(){
+
+        all_themes.push( $(this).data('theme') );
+
+    });
+    
+    $('.settings-box .color-options ul li').on('click', function(){
+
+        // Toggle Active Class On The List Items
+        $(this).addClass('active').siblings('li').removeClass('active')
+
+        // Toggle Between Themes Classes On The Body Depending On Clicked List Item 
+        $('body').removeClass( all_themes.join(' ') ).addClass( $(this).data('theme') );       
+
+    });
+
+    /* End Change Color Of Website Theme By Click The Color Option */
+
 });

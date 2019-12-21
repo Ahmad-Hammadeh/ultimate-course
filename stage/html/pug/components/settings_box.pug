@@ -1,10 +1,17 @@
 .settings-box
-    .settings-toggle
-        i.fa.fa-gear.fa-lg
-    .settings-content
-        .option-box
-            h4 Color Option
-        .option-box
-            h4 Font Option
-        .option-box
-            h4  Sidebar Option
+  .settings-toggle
+    i.fa.fa-gear.fa-lg
+  .settings-content.text-center
+    .option-box.color-options
+      h4.box-title Color Option
+      - var themes = ["blue_theme", "red_theme", "green_theme", "dark_theme"];
+      ul.list-unstyled
+        each theme in themes
+          if theme === "blue_theme"           
+            li.active(data-theme= theme)
+          else
+            li(data-theme= theme)
+    .option-box
+      h4.box-title Font Option
+    .option-box
+      h4.box-title  Sidebar Option

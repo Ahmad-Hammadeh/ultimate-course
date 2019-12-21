@@ -1,0 +1,19 @@
+// All Themes Colors Properties
+$themes_colors: (
+    blue_theme: ( color: $blue ),
+    red_theme: ( color: $red ),
+    green_theme: ( color: $green ),
+    dark_theme: (color: $mainLightColor ),
+    );
+
+// Loop Throw All Themes To Get Colored Classes For All Theme
+@each $theme, $map in $themes_colors {
+
+    .#{$theme} .sidebar .logo{
+        color: map-get($map, color);
+    }
+    .#{$theme} .page .content-area .content .pagehead .page-title{
+        color: map-get($map, color);
+    }
+
+}

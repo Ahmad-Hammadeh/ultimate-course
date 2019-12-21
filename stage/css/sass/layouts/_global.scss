@@ -21,5 +21,17 @@ a:hover, a:focus {
         &.no-sidebar {
             width: 100%;
         }
+        .content{
+
+            .pagehead{
+                padding: 10px;
+                .page-title{
+                    font-weight: bold;
+                }
+                .page-description{
+
+                }
+            }
+        }
     }
 }

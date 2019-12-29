@@ -1,7 +1,7 @@
 .sidebar
   .logo.text-center Hammadeh
   ul.links-list.list-unstyled
-    li: a(href="#") Homepage
+    li: a(href="homepage.html", class= pageTitle === "Home page" ? "active": "") Homepage
     li
       a(class="toggle-list", href="#") 
         | Form
@@ -20,3 +20,4 @@
         li: a(href="#") Success
         li: a(href="#") Danger
         li: a(href="#") Loading
+    li: a(href="contact.html", class= pageTitle === "Contact us" ? "active": "") Contact us

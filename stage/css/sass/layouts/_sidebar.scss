@@ -40,6 +40,11 @@
                 &:hover{
                     padding-left: 25px;
                 }
+                &.active{
+                    &:before{
+                        border-color: $blue;
+                    }
+                }
                 &:before{
                     content: "";
                     position: absolute;

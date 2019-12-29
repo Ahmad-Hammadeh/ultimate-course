@@ -17,8 +17,8 @@ $themes_colors: (
         .sidebar .logo{
             color: $color;
         }
-        .page .content-area .content .pagehead .page-title{
-            color: $color;
+        .sidebar .links-list>li>a.active:before{
+            border-color: $color;
         }
         .header .header-icon:hover{
             background-color: $color;
@@ -31,6 +31,9 @@ $themes_colors: (
         }
         .settings-box .settings-toggle:hover{
             background-color: $color;
+        }
+        .page .content-area .content .pagehead .page-title{
+            color: $color;
         }
 
     }

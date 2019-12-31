@@ -11,7 +11,11 @@
             li.active(data-theme= theme)
           else
             li(data-theme= theme)
-    .option-box
+    .option-box.font-options
       h4.box-title Font Option
+      - var fonts = ['nunito', 'raleway', 'oxygen', 'karla'];
+      select.form-control
+        each font in fonts
+          option(value=font)=font + ' font'
     .option-box
       h4.box-title  Sidebar Option

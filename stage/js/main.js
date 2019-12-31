@@ -103,4 +103,20 @@ $(function () {
 
     /* End Change Color Of Website Theme By Click The Color Option */
 
+    /* Start Change Fonts Of website By Select One Font From Fonts Select Box */
+
+    // Get All Font In Fonts Options Select Box
+    var all_fonts = [];
+
+    $('.font-options select option').each(function(){
+        all_fonts.push( $(this).val() );
+    });
+    $('.font-options select').on('change', function(){
+
+        $('body').removeClass(all_fonts.join(' ')).addClass( $(this).find('option:selected').val() );
+
+    });
+
+    /* End Change Fonts Of website By Select One Font From Fonts Select Box */
+
 });

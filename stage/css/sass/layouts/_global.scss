@@ -3,6 +3,19 @@
 }
 body{
     font-family: 'Nunito', sans-serif;
+
+    &.nunito{
+        font-family: 'Nunito', sans-serif;
+    }
+    &.raleway{
+        font-family: 'Raleway', sans-serif;
+    }
+    &.oxygen{
+        font-family: 'Oxygen', sans-serif;
+    }
+    &.karla{
+        font-family: 'Karla', sans-serif;
+    }
 }
 a,
 a:hover, a:focus {

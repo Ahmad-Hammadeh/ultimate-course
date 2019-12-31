@@ -32,6 +32,10 @@ $themes_colors: (
         .settings-box .settings-toggle:hover{
             background-color: $color;
         }
+        .settings-box .settings-content .font-options select:focus{
+            border-color: $color;
+            box-shadow: 0 0 0 0.2rem rgba($color,.25);
+        }
         .page .content-area .content .pagehead .page-title{
             color: $color;
         }
